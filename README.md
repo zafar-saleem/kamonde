@@ -1,27 +1,29 @@
-# React + TypeScript + Vite
+# react.js coding challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dear candidate,
 
-Currently, two official plugins are available:
+Thank you for accepting our invitation to this coding challenge, which we only send
+out to candidates that look very promising! So, congratulations!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Your tasks
 
-## Expanding the ESLint configuration
+- read these instructions carefully
+- this project contains the boilerplate for a simple react app. Extend the code to render three links: "HOME", "MODELER" and "FRAMEWORKS" as part of a `Navigation` component.
+- use `react-router` to implement the required routes: `/` to render `HomePage`, `/modeler` to render `ModelerPage` and `/frameworks` to render `FrameworksPage`
+- The `HomePage` component should simply render `<h1>Home</h1>`
+- The `ModelerPage` component should render `<h1>Modeler</h1>` as well as an initialized modeler instance which is rendered into a container after the `<h1>`. By 'modeler' we refer to our
+  popular JavaScript library bpmn.js (docs can be found here: https://github.com/bpmn-io/bpmn-js)
+- In the `FrameworksPage` make use of react to render a search input and a dynamic list of items (use the items array as a reference).
+- Use the input field to filter the list, query name and description to do a full-text search, hide elements in the list where neither name nor description contain the search term.
+- An empty search input should always make the list show all items (name & description).
+- If no name or description matched show an empty state (e.g.: no results found)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Note
 
-- Configure the top-level `parserOptions` property like this:
+- don't forget to save your changes by pressing above save button (or cmd+s), which will also fork the project and generate a new project URL.
+- Let us know when you are done by replying to our email in which we invited you to this challenge. Don't forget to include the link to your codesandbox project.
+- there is no time limit as we generally don't believe that stress will lead to better results.
+- We'll validate your submission by checking if your code is doing what it should do.
+  We'll also inspect your style and attention to detail. So make sure your code is nicely structured,and generally readable. And the UI should be user-friendly and pleasant to look at.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+HAPPY CODING! :-)
