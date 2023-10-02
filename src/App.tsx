@@ -8,8 +8,8 @@ import * as Styled from "./app.styled";
 function App() {
   return (
     <Router>
+      <Navigation />
       <Styled.Main>
-        <Navigation />
         <Routes />
       </Styled.Main>
     </Router>
