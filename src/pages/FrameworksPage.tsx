@@ -2,11 +2,12 @@ import React from "react";
 import ListItem from "../components/pages/frameworks/components/ListItems";
 import SearchInput from "../components/pages/frameworks/components/SearchInput";
 import items from "./items";
+import { debounce } from "lodash";
 
 export const FrameworksPage = () => {
   const [listItems, updateListItems] = React.useState(items);
 
-  const handleUpdateListItems = React.useCallback((value: string) => {
+  const filterListItems = React.useCallback((value: string) => {
     const reg = new RegExp(value.toLowerCase(), "gi");
 
     const filteredItems = listItems.filter((item) => {
@@ -17,7 +18,9 @@ export const FrameworksPage = () => {
     });
 
     updateListItems(filteredItems as any);
-  }, [listItems]);
+  }, []);
+
+  const handleUpdateListItems = debounce(filterListItems, 300);
 
   const listProps = {
     listItems,
