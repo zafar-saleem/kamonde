@@ -1,21 +1,24 @@
 import * as Styled from "./Item.styled";
+import Button from "./components/button";
 
-const colors = ["#ffac00", "#b5cd21", "#4ecd21", "#21cdc7", "#2157cd", "#b121cd", "#ec42e0", "#ec4260"];
+export const Item = ({ ...props }) => {
+  const trimDescription = (desc: string) => desc.length > 150 ? `${desc.substring(0, 100)}...` : desc;
 
-const getRandomColor = () => {
-  return colors[Math.ceil(Math.random() * colors.length - 1)];
+  const { listItems } = props;
+  return (
+    <>
+      {
+        listItems?.map((item: any, index: number) => (
+          <Styled.ListItem key={index}>
+            <Styled.Avatar color={item.color}>{item.name.substring(0,1).toUpperCase()}</Styled.Avatar>
+            <Styled.Title>{item.name}</Styled.Title>
+            <p>{trimDescription(item.description)}</p>
+            <Styled.Actions>
+              <Button type="likes" likes={item.likes}>❤️</Button> <Button type="views" views={item.views}>👀</Button>
+            </Styled.Actions>
+          </Styled.ListItem>
+        ))
+      }
+    </>
+  )
 }
-
-export const Item = ({ ...props }) => (
-  <>
-    {
-      props.listItems?.map((item: any, index: number) => (
-        <Styled.ListItem key={index}>
-          <Styled.Avatar color={getRandomColor()}>{item.name.substring(0,1).toUpperCase()}</Styled.Avatar>
-          <Styled.Title>{item.name}</Styled.Title>
-          <p>{item.description}</p>
-        </Styled.ListItem>
-      ))
-    }
-  </>
-)

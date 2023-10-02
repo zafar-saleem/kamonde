@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 
 export const ListItem = styled.li`
+  position: relative;
+  min-height: 300px;
   padding: ${props => props.theme.tokens.gutter.gutter100};
   background-color: #ffffff;
   transition: all 0.5s;
@@ -26,4 +28,12 @@ export const Avatar = styled.span<{ color?: string; }>`
 
 export const Title = styled.h1`
   text-align: center;
+`;
+
+export const Actions = styled.div`
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
 `;
