@@ -4,7 +4,7 @@ export const Links: IItem[] = [
   {
     label: "Home",
     path: "/",
-    state: "active",
+    state: "inactive",
   },
   {
     label: "Frameworks",
