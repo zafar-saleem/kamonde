@@ -8,8 +8,6 @@ export const ListItem = ({ ...props }: IProps) => {
     type,
   } = props;
 
-  // console.log(type, MapComponents[type]());
-
   return (
     <Styled.Grid>
       {

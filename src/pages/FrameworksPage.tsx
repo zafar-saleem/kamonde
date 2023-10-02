@@ -22,6 +22,8 @@ export const FrameworksPage = () => {
 
   const handleUpdateListItems = debounce(filterListItems, 300);
 
+  const hasListItems = () => listItems.length <= 0 ? "empty" : "list";
+
   const listProps = {
     listItems,
   };
@@ -34,7 +36,7 @@ export const FrameworksPage = () => {
     <>
       <h1>Frameworks</h1>
       <SearchInput {...searchProps} />
-      <ListItem {...listProps} type={listItems.length <= 0 ? "empty" : "list"} />
+      <ListItem {...listProps} type={hasListItems()} />
     </>
   )
 }
