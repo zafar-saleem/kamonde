@@ -14,7 +14,7 @@ export const Item = ({ ...props }) => {
             <Styled.Title>{item.name}</Styled.Title>
             <p>{trimDescription(item.description)}</p>
             <Styled.Actions>
-              <Button type="likes" likes={item.likes}>❤️</Button> <Button variant="span" type="downloads" views={item.views}>⬇️</Button>
+              <Button type="likes" likes={item.likes}>❤️</Button> <Button variant="span" type="downloads" views={item.downloads}>⬇️</Button>
             </Styled.Actions>
           </Styled.ListItem>
         ))
