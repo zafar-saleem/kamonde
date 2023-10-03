@@ -11,6 +11,7 @@ export const Navigation = styled.div`
   color: ${props => props.theme.tokens.colors.neutrals.neutral900};
   background-color: ${props => props.theme.tokens.colors.branding.brand300};
   box-shadow: 0 0 10px 0px #000;
+  z-index: 1;
 
   @media screen and (max-width: ${props => props.theme.breakpoints.s}) {
     padding-left: 0;
