@@ -14,7 +14,8 @@ const hover = css`
   }
 
   &:active {
-    transform: scale3d(1.2, 1.2, 1.2)
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity: 0.6;
   }
 `;
 
