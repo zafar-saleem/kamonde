@@ -5,20 +5,20 @@ const Likes = ({ likes }: IButtons) => (
   <Styled.Likes>{likes}</Styled.Likes>
 )
 
-const Views = ({ views }: IButtons) => (
+const Downloads = ({ views }: IButtons) => (
   <Styled.Views>{views}</Styled.Views>
 )
 
 const mapChildren: any = {
   likes: ({ ...props }) => <Likes {...props} />,
-  views: ({ ...props }) => <Views {...props}/>,
+  downloads: ({ ...props }) => <Downloads {...props}/>,
 }
 
 export const Button = ({ children, type, ...props }: Props) => {
   return (
     <Styled.Wrapper>
       {mapChildren[type]({ ...props })}
-      <Styled.Button>{children}</Styled.Button>
+      <Styled.Button as={props?.variant} type={type}>{children}</Styled.Button>
     </Styled.Wrapper>
   )
 }
