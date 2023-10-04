@@ -1,29 +1,81 @@
-# react.js coding challenge
+## Introduction
 
-Dear candidate,
+`Kamonde` is a project that tests react router dom to navigate between different pages such as `Home`, `Framework` & `Modeler`. It also tests to do a real time text base search on `Frameworks` page. Whereas the Modeler page renders initiated part of Modeler pacakge alongside `h1` title.
 
-Thank you for accepting our invitation to this coding challenge, which we only send
-out to candidates that look very promising! So, congratulations!
+On this occasion, I decided to use `vite` instead of `CRA` due to its less reliability as it is no longer maintained by it's core team. `CRA` also throws countless warnings due to outdated dependencies while creating an app using.
 
-## Your tasks
+Second reason for using `vite` is that it provides better developer experience due to its ligthening fast performance.
 
-- read these instructions carefully
-- this project contains the boilerplate for a simple react app. Extend the code to render three links: "HOME", "MODELER" and "FRAMEWORKS" as part of a `Navigation` component.
-- use `react-router` to implement the required routes: `/` to render `HomePage`, `/modeler` to render `ModelerPage` and `/frameworks` to render `FrameworksPage`
-- The `HomePage` component should simply render `<h1>Home</h1>`
-- The `ModelerPage` component should render `<h1>Modeler</h1>` as well as an initialized modeler instance which is rendered into a container after the `<h1>`. By 'modeler' we refer to our
-  popular JavaScript library bpmn.js (docs can be found here: https://github.com/bpmn-io/bpmn-js)
-- In the `FrameworksPage` make use of react to render a search input and a dynamic list of items (use the items array as a reference).
-- Use the input field to filter the list, query name and description to do a full-text search, hide elements in the list where neither name nor description contain the search term.
-- An empty search input should always make the list show all items (name & description).
-- If no name or description matched show an empty state (e.g.: no results found)
+I decided to use `TypeScript` instead of JavaScript(as the project on `codepen` was in JavaScript) to make this project typesafe which allows to avoid common errors which could lead to potential bugs on production.
 
-## Note
+1. components
+2. pages
+3. theme
 
-- don't forget to save your changes by pressing above save button (or cmd+s), which will also fork the project and generate a new project URL.
-- Let us know when you are done by replying to our email in which we invited you to this challenge. Don't forget to include the link to your codesandbox project.
-- there is no time limit as we generally don't believe that stress will lead to better results.
-- We'll validate your submission by checking if your code is doing what it should do.
-  We'll also inspect your style and attention to detail. So make sure your code is nicely structured,and generally readable. And the UI should be user-friendly and pleasant to look at.
+### components
 
-HAPPY CODING! :-)
+`components/` folder consist of `Navigation`, `Pages` & `utils`. `utils` components are utility components and in this small example it is main `Flex` which I decided them to be simple rather than making them over-complicated. It could easily be evolved if such projects grow in size and new use-cases are introduced etc.
+
+The `Navigation` component consist of main navigation for the entire project.
+
+`pages` component consist of all components to their specific `page` which in this case only `Frameworks` page is complicated and I sub-divide it in further multiple sub-components such as `ListItems` and `SearchInput`.
+
+### pages
+
+I decided to use `lifting the stat up` concept instead of going for using state base application such as `context api`, `redux`, or `mobx`. As it is a relatively simple task and such concepts would have made this task over-complicated.
+
+Since in this project only `Frameworks` page is slightly complicated and that is where I used the above concept which gets list of items from `items.tsx` file and process it for text based search.
+
+### theme
+
+I used a design system using `styled-components` which can be found in `src/theme` folder. This approach is better for having a consistent design throughtout the application and for organisation branding. You can find all the global variables inside `theme` in their respective folders.
+
+### Other tools
+
+Below are some additional tools that concerns `quality`.
+
+1. husky (for pre-commit & pre-push hooks)
+2. commitlint
+3. eslist
+
+## How to run
+
+To install dependencies use below commands.
+
+```bash
+cd kamonde
+yarn
+```
+
+To run locally.
+
+```bash
+yarn dev
+```
+
+To build
+
+```bash
+yarn build
+```
+
+To run lint
+
+```bash
+yarn lint
+```
+## Here is how it looks like.
+
+https://cozy-chimera-25568e.netlify.app/
+
+**Disclaimer**
+
+I modified the `items.tsx` file and added additional attributes such as `likes` & `downloads`. This is just to add some additional information on cards on `Frameworks` page.
+
+Moreover, I couldn't grasp the `Modeler` instance to be rendered in `Modeler` page. I simply initialized in the page and rendered it after `h1` which is simply an `object`.
+
+I decided to implement this project outside of `codepen` as this approach would give slightly better idea to reviewers the process of my working on this project.
+
+# Contributors
+
+1. @zafar-saleem
