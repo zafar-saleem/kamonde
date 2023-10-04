@@ -24,6 +24,7 @@ export const Button = styled.button<IButton>`
   background: transparent;
   border: none;
   font-size: 1.2rem;
+  text-align: center;
   transition: all 0.3s;
 
   ${props => props.type === "likes" && hover};
