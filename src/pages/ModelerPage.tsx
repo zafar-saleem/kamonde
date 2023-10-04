@@ -1,12 +1,14 @@
-// import Modeler from "bpmn-js/lib/Modeler";
-// import "bpmn-js/dist/assets/diagram-js.css";
-// import "bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css";
-
-// export a modeler page component
-// use the Modeler to instantiate a modeler instance
+import Modeler from "bpmn-js/lib/Modeler";
+import "bpmn-js/dist/assets/diagram-js.css";
+import "bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css";
 
 export const ModelerPage = () => {
+  const viewer = new Modeler({});
+
   return (
-    <h1>Modeler</h1>
+    <>
+      <h1>Modeler</h1>
+      <div>{viewer.toString()}</div>
+    </>
   )
 }
