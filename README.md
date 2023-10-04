@@ -76,6 +76,6 @@ Moreover, I couldn't grasp the `Modeler` instance to be rendered in `Modeler` pa
 
 I decided to implement this project outside of `codepen` as this approach would give slightly better idea to reviewers the process of my working on this project.
 
-# Contributors
+## Contributors
 
-1. @zafar-saleem
+1. [@zafar-saleem](https://github.com/zafar-saleem)
