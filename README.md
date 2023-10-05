@@ -6,7 +6,7 @@ On this occasion, I decided to use `vite` instead of `CRA` due to its less relia
 
 Second reason for using `vite` is that it provides better developer experience due to its ligthening fast performance.
 
-I decided to use `TypeScript` instead of JavaScript(as the project on `codepen` was in JavaScript) to make this project typesafe which allows to avoid common errors which could lead to potential bugs on production.
+I decided to use `TypeScript` instead of JavaScript(as the project on `CodeSandBox` was in JavaScript) to make this project typesafe which allows to avoid common errors which could lead to potential bugs on production.
 
 1. components
 2. pages
