@@ -72,9 +72,9 @@ https://cozy-chimera-25568e.netlify.app/
 
 I modified the `items.tsx` file and added additional attributes such as `likes` & `downloads`. This is just to add some additional information on cards on `Frameworks` page.
 
-Moreover, I couldn't grasp the `Modeler` instance to be rendered in `Modeler` page. I simply initialized in the page and rendered it after `h1` which is simply an `object`.
+Moreover, I couldn't grasp the `Modeler` instance to be rendered in `Modeler` page. I simply initialized in the page and rendered it after `h1` which is simply an `object`. In real world and production project I would rather communicate with the stack holders to completely understand my task before starting working on it or deploying to production.
 
-I decided to implement this project outside of `codepen` as this approach would give slightly better idea to reviewers the process of my working on this project.
+I decided to implement this project outside of `CodeSandBox` as this approach would give slightly better idea to reviewers the process of my working on this project.
 
 ## Contributors
 
