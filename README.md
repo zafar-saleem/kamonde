@@ -74,6 +74,8 @@ I modified the `items.tsx` file and added additional attributes such as `likes` 
 
 Moreover, I couldn't grasp the `Modeler` instance to be rendered in `Modeler` page. I simply initialized in the page and rendered it after `h1` which is simply an `object`. In real world and production project I would rather communicate with the stack holders to completely understand my task before starting working on it or deploying to production.
 
+I also didn't change the `pages` file structure and continued working on it as provided in the task as I assume I will be working on existing codebase where I will mostly work on adding new features and fixing bugs etc alongside other major tasks. Therefore, I assume I would use mostly reusable code apart from adding some more when required.
+
 I decided to implement this project outside of `CodeSandBox` as this approach would give slightly better idea to reviewers the process of my working on this project.
 
 ## Contributors
