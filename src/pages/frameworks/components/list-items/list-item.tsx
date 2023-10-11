@@ -1,6 +1,6 @@
 import { IProps } from "./interfaces";
-import * as Styled from "./ListItem.styled";
-import { MapComponents } from "./MapComponents";
+import * as Styled from "./list-item.styled";
+import { MapComponents } from "./map-components";
 
 export const ListItem = ({ ...props }: IProps) => {
   const {

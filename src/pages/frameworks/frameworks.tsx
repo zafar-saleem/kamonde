@@ -1,7 +1,7 @@
 import React from "react";
-import ListItem from "../components/pages/frameworks/components/ListItems";
-import SearchInput from "../components/pages/frameworks/components/SearchInput";
-import items from "./items";
+import ListItem from "./components/list-items";
+import SearchInput from "./components/search-input";
+import items from "../items";
 import { debounce } from "lodash";
 
 export const FrameworksPage = () => {

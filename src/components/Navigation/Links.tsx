@@ -11,9 +11,4 @@ export const Links: IItem[] = [
     path: "/frameworks",
     state: "inactive",
   },
-  {
-    label: "Modeler",
-    path: "/modeler",
-    state: "inactive",
-  },
 ]

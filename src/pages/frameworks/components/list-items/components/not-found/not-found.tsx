@@ -1,4 +1,4 @@
-import * as Styled from "./NotFound.styled";
+import * as Styled from "./not-found.styled";
 
 export const NotFound = () => (
   <>

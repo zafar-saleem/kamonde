@@ -1,8 +1,8 @@
 import React from "react";
-import * as Styled from "./Navigation.styled";
+import * as Styled from "./navigation.styled";
 import { useLocation } from "react-router-dom";
 import { IItem } from "./interfaces";
-import { Links } from "./Links";
+import { Links } from "./links";
 
 export const Navigation = () => {
   const [state, updateState] = React.useState(Links);

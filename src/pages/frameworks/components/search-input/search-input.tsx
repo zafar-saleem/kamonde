@@ -1,4 +1,4 @@
-import * as Styled from "./SearchInput.styled";
+import * as Styled from "./search-input.styled";
 
 export const SearchInput = ({ ...props }) => {
 

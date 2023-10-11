@@ -1,5 +1,5 @@
-import Item from "./components/Item";
-import NotFound from "./components/NotFound";
+import Item from "./components/item";
+import NotFound from "./components/not-found";
 
 export const MapComponents: any = {
   empty: ({ index }: any) => <NotFound key={index} />,

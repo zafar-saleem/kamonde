@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import * as Styled from "./Item.styled";
+import * as Styled from "./item.styled";
 import Button from "./components/button";
 
 export const Item = ({ ...props }) => {

@@ -1,5 +1,5 @@
 import { IProps } from "./interfaces";
-import Flex, * as Styled from "./Flex.styled";
+import Flex, * as Styled from "./flex.styled";
 
 Flex.FlexWrapper = ({ children, ...props }: IProps) => {
   return (
