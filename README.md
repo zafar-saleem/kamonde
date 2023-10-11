@@ -1,18 +1,18 @@
 ## Introduction
 
-`Kamonde` is a project that tests react router dom to navigate between different pages such as `Home`, `Framework` & `Modeler`. It also tests to do a real time text base search on `Frameworks` page. Whereas the Modeler page renders initiated part of Modeler pacakge alongside `h1` title.
+`Kamonde` is a project that tests react router dom to navigate between different pages such as `Home` & `Framework`. It also tests to do a real time text base search on `Frameworks` page.
 
-On this occasion, I decided to use `vite` instead of `CRA` due to its less reliability as it is no longer maintained by it's core team. `CRA` also throws countless warnings due to outdated dependencies while creating an app using.
+<!-- On this occasion, I decided to use `vite` instead of `CRA` due to its less reliability as it is no longer maintained by it's core team. `CRA` also throws countless warnings due to outdated dependencies while creating an app using. -->
 
-Second reason for using `vite` is that it provides better developer experience due to its ligthening fast performance.
+<!-- Second reason for using `vite` is that it provides better developer experience due to its ligthening fast performance. -->
 
-I decided to use `TypeScript` instead of JavaScript(as the project on `CodeSandBox` was in JavaScript) to make this project typesafe which allows to avoid common errors which could lead to potential bugs on production.
-
+<!-- I decided to use `TypeScript` instead of JavaScript(as the project on `codepen` was in JavaScript) to make this project typesafe which allows to avoid common errors which could lead to potential bugs on production. -->
+<!-- 
 1. components
 2. pages
 3. theme
-
-### components
+ -->
+<!-- ### components
 
 `components/` folder consist of `Navigation`, `Pages` & `utils`. `utils` components are utility components and in this small example it is main `Flex` which I decided them to be simple rather than making them over-complicated. It could easily be evolved if such projects grow in size and new use-cases are introduced etc.
 
@@ -36,7 +36,7 @@ Below are some additional tools that concerns `quality`.
 
 1. husky (for pre-commit & pre-push hooks)
 2. commitlint
-3. eslist
+3. eslist -->
 
 ## How to run
 
@@ -64,11 +64,11 @@ To run lint
 ```bash
 yarn lint
 ```
-## Here is how it looks like.
+## Here is how it looks like live.
 
 https://cozy-chimera-25568e.netlify.app/
 
-**Disclaimer**
+<!-- **Disclaimer**
 
 I modified the `items.tsx` file and added additional attributes such as `likes` & `downloads`. This is just to add some additional information on cards on `Frameworks` page.
 
@@ -76,7 +76,8 @@ Moreover, I couldn't grasp the `Modeler` instance to be rendered in `Modeler` pa
 
 I also didn't change the `pages` file structure and continued working on it as provided in the task as I assume I will be working on existing codebase where I will mostly work on adding new features and fixing bugs etc alongside other major tasks. Therefore, I assume I would use mostly reusable code apart from adding some more when required.
 
-I decided to implement this project outside of `CodeSandBox` as this approach would give slightly better idea to reviewers the process of my working on this project.
+I decided to implement this project outside of `codepen` as this approach would give slightly better idea to reviewers the process of my working on this project. -->
+
 
 ## Contributors
 
